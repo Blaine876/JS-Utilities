@@ -1,7 +1,7 @@
 function tipCalc()
 {
-    const amount = document.getElementById();
-    const percent = document.getElementById();
-    const tip = amount * (percent/100);
+    var amount = document.getElementById('bill').value;
+    var percent = document.getElementById('ten').value;
+    var tip = amount * (percent/100);
     return tip;
 }
