@@ -1,0 +1,36 @@
+body {
+    
+    text-align: center;
+}
+
+h1 {
+    
+    font-size: 30px;
+    color: #4CAF50;
+}
+
+p {
+
+    font-size: 20px;
+}
+
+form {
+
+    display: inline-block;
+}
+
+#ten, #fifteen, #twenty, #custom {
+
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+
+    width: 75px;
+}

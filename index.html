@@ -2,35 +2,33 @@
         Utilities include :
         TIp Calculator
         Unit Conversion Calculator
+        Currency Conversion
+        ... some other stuff 
 -->
 
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link rel = "stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title> World of Utilities </title>
 </head>
 
 <body>
+    <div class="tipCalculator">
+        <h1> Tip Calculator</h1>
+        <form>
+            <p>Bill Total: <input type="number" id="bill"> </p>      
+            <button type = "button" id="ten" value ="10" onclick="tipTen()"> 10% </button>
+            <button type = "button" id="fifteen" value ="15" onclick="tipFifteen()"> 15% </button>
+            <button type = "button" id="twenty" value ="20" onclick="tipTwenty()"> 20% </button>
+            <button type = "button" id="custom" onclick="tipCustom()"> Custom % </button>
+            <input type = "number" id = "other">
+            <br>
     
-    <div class="Tip Calculator"
-    <h1> 
-        <p> Tip Calculator </p>
-        <form action =""
-        <p> Bill Amount: </p>
-        <button type ="ten">10%</button>
-        <button type ="fifteen">15%</button>
-        <button type ="twenty">20%</button>
-        <button type ="custom">X%</button>
-    </h1>
+            <p id="tip"> Tip: </p>
+
+        </form>
     </div>
-
-
-
-    <div class = "Unit Conversion"
-
-    
-
 </body>
-
 </html>
