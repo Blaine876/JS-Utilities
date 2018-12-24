@@ -2,6 +2,7 @@
         Utilities include :
         TIp Calculator
         Unit Conversion Calculator
+        Currency Conversion
         ... some other stuff 
 -->
 
@@ -15,15 +16,19 @@
 
 <body>
     <div class="tipCalculator">
-        <h3> Tip Calculator</h3>
-        <p>Bill Total: <input type="text" id="bill"> </p>      
-        <input type="button" value="10%"  id="ten" onclick="tipCalc()">
-        <input type="button" value="15%"  id="fifteen" onclick="tipCalc()">
-        <input type="button" value="20%"  id="twenty" onclick="tipCalc()"> 
-        <br>
-        <input type="button" value="Custom %" id="custom">
-        <input type="text">
-        <p>Tip: </p>
+        <h1> Tip Calculator</h1>
+        <form>
+            <p>Bill Total: <input type="number" id="bill"> </p>      
+            <button type = "button" id="ten" value ="10" onclick="tipTen()"> 10% </button>
+            <button type = "button" id="fifteen" value ="15" onclick="tipFifteen()"> 15% </button>
+            <button type = "button" id="twenty" value ="20" onclick="tipTwenty()"> 20% </button>
+            <button type = "button" id="custom" onclick="tipCustom()"> Custom % </button>
+            <input type = "number" id = "other">
+            <br>
+    
+            <p id="tip"> Tip: </p>
+
+        </form>
     </div>
 </body>
 </html>
