@@ -18,7 +18,7 @@
     <div class="tipCalculator">
         <h1> Tip Calculator</h1>
         <form>
-            <p>Bill Total: <input type="number" id="bill"> </p>      
+            <p>Bill Total: $<input type="number" id="bill"> </p>      
             <button type = "button" id="ten" value ="10" onclick="tipTen()"> 10% </button>
             <button type = "button" id="fifteen" value ="15" onclick="tipFifteen()"> 15% </button>
             <button type = "button" id="twenty" value ="20" onclick="tipTwenty()"> 20% </button>
@@ -26,9 +26,54 @@
             <input type = "number" id = "other">
             <br>
     
-            <p id="tip"> Tip: </p>
-
+            <p id="tip"> Tip:  </p>
         </form>
     </div>
+
+        <br>
+        <br>
+
+    
+    <div class = "unitConversion">
+        <h1> Unit Converter </h1>
+        <form>
+            <p> <input type="number" id = "firstUnit">  </p>
+
+           <select name = "first" id = "mySelect1" > 
+                <option value="mm"> millimeter </option>
+                <option value="cm"> centimeter </option>
+                <option value="m"> meter </option>
+                <option value="km"> kilometer </option>
+            </select>
+        
+            to <select name = "second" id = "mySelect2" > </p>
+                <option value="mm"> millimeter </option>
+                <option value="cm"> centimeter </option>
+                <option value="m"> meter </option>
+                <option value="km"> kilometer </option>
+            </select>
+            <br> <br>
+                <button type = "button" id = "convert" onclick="unitConvert()"> Convert!</button>
+
+                <p id="convertOut"> </p>
+        </form>
+    </div>
+
+
+
+    <div class="toDoList">
+
+        <h1> To-Do List </h1>
+        <p> Enter your plans for the day! </p>
+        <form>
+           <p> Entry <input type="text" id ="todo"> </p>
+        
+
+
+        </form>
+
+
+    </div>
+   
 </body>
 </html>
